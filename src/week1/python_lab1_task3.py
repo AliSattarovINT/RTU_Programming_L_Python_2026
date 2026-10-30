@@ -31,9 +31,9 @@ Examples (these are also used to check your work):
 
 
 def analyze_sentence(text: str) -> tuple[int, int, bool]:
-    # Ali Sattarov - 251ADB063 | στα Αγγλικά: Preserve spaces in the character count.
+    # Ali Sattarov - 251ADB063 | στα Αγγλικά: spaces count too
     characters = len(text)
-    # Ali Sattarov - 251ADB063 | στα Αγγλικά: Check the substring without case sensitivity.
+    # Ali Sattarov - 251ADB063 | στα Αγγλικά: check in lowercase
     return characters, len(text.split()), "python" in text.lower()
 
 

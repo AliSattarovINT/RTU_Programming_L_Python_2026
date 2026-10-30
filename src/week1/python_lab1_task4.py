@@ -65,7 +65,8 @@ def count_words(text: str) -> int:
 
 def extract_numbers(text: str) -> list[int]:
     numbers = []
-    # Ali Sattarov - 251ADB063 | στα Αγγλικά: Ignore trailing punctuation and allow one minus sign.
+    # Ali Sattarov - 251ADB063 | στα Αγγλικά:
+    # // remove punctuation, then check the number
     for word in text.split():
         word = word.rstrip(".,!?;:")
         digits = word[1:] if word.startswith("-") else word
@@ -77,7 +78,7 @@ def extract_numbers(text: str) -> list[int]:
 def analyze_text(text: str) -> dict:
     numbers = extract_numbers(text)
     total = sum(numbers)
-    # Ali Sattarov - 251ADB063 | στα Αγγλικά: Avoid division by zero when there are no numbers.
+    # Ali Sattarov - 251ADB063 | στα Αγγλικά: no numbers -> average is 0.0
     return {
         "characters": count_characters(text),
         "words": count_words(text),

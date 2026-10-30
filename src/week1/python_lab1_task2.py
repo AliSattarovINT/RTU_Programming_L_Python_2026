@@ -27,9 +27,9 @@ Examples (these are also used to check your work):
 
 
 def greet_user(name: str) -> str:
-    # Ali Sattarov - 251ADB063 | στα Αγγλικά: Remove outer spaces and normalize the name.
+    # Ali Sattarov - 251ADB063 | στα Αγγλικά: trim spaces, then capitalize
     name = name.strip().capitalize()
-    # Ali Sattarov - 251ADB063 | στα Αγγλικά: Use a fallback for an empty name.
+    # Ali Sattarov - 251ADB063 | στα Αγγλικά: blank name -> Stranger
     if not name:
         name = "Stranger"
     return f"Hello, {name}! Welcome to Python!"
