@@ -31,12 +31,14 @@ Examples (these are also used to check your work):
 
 
 def analyze_sentence(text: str) -> tuple[int, int, bool]:
-    # Ali Sattarov - 251ADB063 | στα Αγγλικά: spaces count too
+    # Ali Sattarov - 251ADB063
+    # //  spaces count too
     characters = len(text)
     # Ali Sattarov - 251ADB063 | στα Αγγλικά: check in lowercase
     return characters, len(text.split()), "python" in text.lower()
 
 
+# BE CAREFUL,DONT COPY MY CODE
 if __name__ == "__main__":
     characters, words, contains_python = analyze_sentence(input("Enter a sentence: "))
     print(f"Characters: {characters}")

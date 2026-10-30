@@ -27,16 +27,17 @@ Examples (these are also used to check your work):
 0.0
 """
 
-
 import math
 
 
 def circle_area(radius: float) -> float:
-    # Ali Sattarov - 251ADB063 | στα Αγγλικά: pi times radius squared
-    return math.pi * radius ** 2
+    # Ali Sattarov - 251ADB063 στα Αγγλικάaaaa
+    # //pi times radius squared
+    return math.pi * radius**2
 
 
 if __name__ == "__main__":
-    # Ali Sattarov - 251ADB063 | στα Αγγλικά: show 2 decimal places
+    # Ali Sattarov - 251ADB063
+    # //how 2 decimal places
     radius = float(input("Enter radius: "))
     print(f"Area of the circle: {circle_area(radius):.2f}")

@@ -78,7 +78,8 @@ def extract_numbers(text: str) -> list[int]:
 def analyze_text(text: str) -> dict:
     numbers = extract_numbers(text)
     total = sum(numbers)
-    # Ali Sattarov - 251ADB063 | στα Αγγλικά: no numbers -> average is 0.0
+    # Ali Sattarov - 251ADB063
+    # //στα Αγγλικά. no numbers - average is 0.0
     return {
         "characters": count_characters(text),
         "words": count_words(text),
@@ -87,6 +88,8 @@ def analyze_text(text: str) -> dict:
         "average": total / len(numbers) if numbers else 0.0,
     }
 
+
+# //BU KOD MENIMDIR, KOPYALAMAQ OLMAZ !!! DIQQET !!!
 
 if __name__ == "__main__":
     result = analyze_text(input("Enter text: "))
