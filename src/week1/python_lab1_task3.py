@@ -34,7 +34,8 @@ def analyze_sentence(text: str) -> tuple[int, int, bool]:
     # Ali Sattarov - 251ADB063
     # //  spaces count too
     characters = len(text)
-    # Ali Sattarov - 251ADB063 | στα Αγγλικά: check in lowercase
+    # Ali Sattarov - 251ADB063
+    # #check in lowercase
     return characters, len(text.split()), "python" in text.lower()
 
 

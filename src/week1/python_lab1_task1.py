@@ -31,7 +31,7 @@ import math
 
 
 def circle_area(radius: float) -> float:
-    # Ali Sattarov - 251ADB063 στα Αγγλικάaaaa
+    # //Ali Sattarov 251ADB063  Αγγλικάaaaa
     # //pi times radius squared
     return math.pi * radius**2
 

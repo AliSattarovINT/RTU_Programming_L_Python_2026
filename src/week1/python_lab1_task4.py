@@ -65,7 +65,7 @@ def count_words(text: str) -> int:
 
 def extract_numbers(text: str) -> list[int]:
     numbers = []
-    # Ali Sattarov - 251ADB063 | στα Αγγλικά:
+    # Ali Sattarov -251ADB063
     # // remove punctuation, then check the number
     for word in text.split():
         word = word.rstrip(".,!?;:")
@@ -79,7 +79,7 @@ def analyze_text(text: str) -> dict:
     numbers = extract_numbers(text)
     total = sum(numbers)
     # Ali Sattarov - 251ADB063
-    # //στα Αγγλικά. no numbers - average is 0.0
+    # //στα aγγλικάaaatika . NOO numbers,cos average is 0.0
     return {
         "characters": count_characters(text),
         "words": count_words(text),
