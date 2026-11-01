@@ -31,7 +31,7 @@ def greet_user(name: str) -> str:
     # //στα Αγγλικά             ttttttrim spaces, then capitalize
     name = name.strip().capitalize()
     # Ali Sattarov 251ADB063
-    # // Αγγλικa blank name too Stranger
+    # //3 Αγγλικa blank name too Stranger
     if not name:
         name = "Stranger"
     return f"Hello, {name}! Welcome to Python!"
